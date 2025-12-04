@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Start MERN Stack",
+      "configurations": ["Backend", "Frontend"]
+    }
+  ],
+  "configurations": [
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Backend",
+      "command": "npm run dev --prefix backend"
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Frontend",
+      "command": "$env:PORT=0; npm start --prefix frontend"
+    }
+  ]
+}
